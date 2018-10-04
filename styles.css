@@ -1,0 +1,173 @@
+html {
+  background-image: linear-gradient(to bottom right, rgba(119, 201, 212, .5), rgba(87, 188, 144, .5)), url(runners.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.wrap1{
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  right: 15%;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  background: rgba(1, 82, 73, 0.85);
+}
+
+.wrap1::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  padding: 2% 5% 2.5% 5%;
+  text-shadow: rgb(165, 165, 175) 1px 1px;
+  text-align: center;
+}
+
+form {
+  padding: 2.5% 5% 15% 5%;
+}
+
+fieldset {
+  padding: 2% 0;
+  border: none;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+button:active {
+  background-color: rgb(165, 165, 175);
+}
+
+.time div {
+  width: 185px;
+  padding-top: 1%;
+  margin: 0 2.5%;
+}
+
+
+.time input {
+  float: right;
+  background-color: rgb(87, 188, 144);
+
+  color: white;
+  font-family: inherit;
+  font-weight: bold;
+  border: none;
+
+  height:1.3em;
+  padding:.2em .5em .2em .5em;
+  width: 60px;
+  text-align: right;
+}
+
+
+.dist input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid rgb(165, 165, 175);
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.dist input:checked {
+  border: 6px solid white;
+}
+
+.dist div{
+  margin: 0 2%;
+}
+
+button {
+  position: absolute;
+  left: 50%;
+  margin-top: 2.5%;
+  margin-left: -50px;
+
+  background-color: rgb(87, 188, 144);
+  font-family: inherit;
+  color: white;
+  font-weight: bold;
+
+  height: 2.5em;
+  width: 100px;
+}
+
+.slideOut {
+  transform: translateY(-2000%);
+  overflow: hidden;
+  opacity: 0;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(0, -0.31, .83, .67);
+}
+
+.slideOut:nth-child(odd){
+  display: none;
+}
+
+.display {
+  padding: 0 7.5%;
+  opacity: 0;
+}
+
+.active {
+  padding: 2.5% 7.5% 0 7.5%;
+  display: inline-block;
+  transition: .5s;
+  opacity: 1;
+
+  font-weight: bold;
+}
+
+.prevTime {
+  font-size: 1.1em;
+}
+
+.raceTime{
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.pace{
+  width: 100%;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}

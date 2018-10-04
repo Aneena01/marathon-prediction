@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Marathon Time Predictor</title>
+    <script type="text/javascript" src="script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class='wrap1'>
+      <h1>Marathon Time Predictor</h1>
+      <p class="display"></p>
+      <form>
+          <fieldset id="distance1" class="dist">
+            <legend> Select the distance of a race you've recently run: *</legend>
+            <div>
+              <input type="radio" name="dist1" id="5k1" value="5k">
+              <label for="5k1">5k</label>
+            </div>
+            <div>
+              <input type="radio" name="dist1" id="10k1" value="10k">
+              <label for="10k1">10k</label>
+            </div>
+            <div>
+              <input type="radio" name="dist1" id="10mi1" value="10 mile">
+              <label for="10mi1">10 miles</label>
+            </div>
+            <div>
+              <input type="radio" name="dist1" id="half1" value="half marathon" checked>
+              <label for="half1">Half marathon</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="time1" class="time">
+            <legend> What was your time for that race? *</legend>
+            <div>
+              <label for="hours1">Hours:</label>
+              <input type="number" name="tim1" id="hours1" min=0 max=60 placeholder=0></input><br>
+            </div>
+            <div>
+              <label for="mins1">Minutes:</label>
+              <input type="number" name="tim1" id="mins1" min=0 max=60 placeholder=0></input><br>
+            </div>
+            <div>
+              <label for="secs1">Seconds:</label>
+              <input type="number" name="tim1" id="secs1" min=0 max=60 placeholder=0></input>
+            </div>
+          </fieldset>
+
+          <fieldset id="distance2" class="dist">
+            <legend> Select the distance of another race you've recently run: </legend>
+            <div>
+              <input type="radio" name="dist2" id="5k2" value="5k">
+              <label for="5k2">5k</label>
+            </div>
+            <div>
+              <input type="radio" name="dist2" id="10k2" value="10k">
+              <label for="10k2">10k</label>
+            </div>
+            <div>
+              <input type="radio" name="dist2" id="10mi2" value="10 mile">
+              <label for="10mi2">10 miles</label>
+            </div>
+            <div>
+              <input type="radio" name="dist2" id="half2" value="half marathon">
+              <label for="half2">Half marathon</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="time2" class="time">
+            <legend> What was your time for that race? </legend>
+            <div>
+              <label for="hours2">Hours:</label>
+              <input type="number" name="tim2" id="hours2" min=0 max=60 placeholder=0></input><br>
+            </div>
+            <div>
+              <label for="mins2">Minutes:</label>
+              <input type="number" name="tim2" id="mins2" min=0 max=60 placeholder=0></input><br>
+            </div>
+            <div>
+              <label for="secs2">Seconds:</label>
+              <input type="number" name="tim2" id="secs2" min=0 max=60 placeholder=0></input>
+            </div>
+          </fieldset>
+
+          <!-- maybe wire this up later
+          fieldset id="weekly" class="week">
+            <legend> How miles are you running a week?</legend>
+            <div>
+              <label for="distWeek">Miles: </label>
+              <input type="number" name ="distWeek" id="distweek" min=0 placeholder=0></input>
+            </div>
+          </fieldset-->
+
+          <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
