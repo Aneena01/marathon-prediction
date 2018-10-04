@@ -143,10 +143,9 @@ button {
 
 .active {
   padding: 2.5% 7.5% 0 7.5%;
-  display: inline-block;
+  display: block;
   transition: .5s;
   opacity: 1;
-
   font-weight: bold;
 }
 
