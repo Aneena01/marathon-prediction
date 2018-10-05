@@ -112,7 +112,7 @@ function makePrediction(e) {
   let t1
   let d1
 
-  if (tot2 !== 0) {
+  if (tot2 !== 0 && distance2 !== undefined) {
     t1 = average(tot1, tot2)
     d1 = average(distMiles1, distMiles2)
   }
@@ -150,7 +150,7 @@ function makePrediction(e) {
   let display3 = `, you could expect to run a marathon in: </br><span class="raceTime">${riegelHrs}:${riegelMins}:${riegelSecs}</span></br><span class="pace">(${paceMins}:${paceSecs}/mile pace)</span>`
 
 
-  tot2 !== 0 && distance2 !== '' ? results.innerHTML = display1 + display2 + display3 : results.innerHTML = display1 + display3
+  tot2 !== 0 && distance2 !== undefined ? results.innerHTML = display1 + display2 + display3 : results.innerHTML = display1 + display3
 
 
   //if there's a valid input from the form, show the results
