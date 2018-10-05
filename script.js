@@ -141,7 +141,7 @@ function makePrediction(e) {
   let pace = riegel / mara
   let paceMins = Math.floor((pace/60))
   let paceSecs = Math.round((pace%60))
-  paceSecs < 10 ? racePaceSecs = '0' + racePaceSecs : ''
+  paceSecs < 10 ? paceSecs = '0' + paceSecs : ''
 
 
   //create text to display
