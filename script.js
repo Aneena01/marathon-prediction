@@ -97,7 +97,7 @@ function makePrediction(e) {
     case '10k':
       distMiles2 = 6.21371
       break;
-    case '10 mi':
+    case '10 mile':
       distMiles2 = 10
       break;
     case 'half marathon':
